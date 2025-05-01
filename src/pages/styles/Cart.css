@@ -1,0 +1,144 @@
+/* Cart Page Container */
+main {
+    padding: 24px;
+  }
+  
+  /* Heading */
+  main h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }
+  
+  /* Grid Layout */
+  .cart-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .cart-grid {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+  
+  /* Cart Item Card */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  /* Product Image */
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 16px;
+  }
+  
+  /* Product Details */
+  .item-details h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  
+  .item-details p {
+    color: #4b5563; /* gray-700 */
+    font-size: 14px;
+  }
+  
+  /* Action Row */
+  .item-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+  }
+  
+  .item-actions button {
+    color: #dc2626; /* red-600 */
+    background: none;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .item-actions button:hover {
+    text-decoration: underline;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .order-summary h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  
+  .summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  
+  .summary-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Checkout Button */
+  .checkout-btn {
+    background-color: #9ca3af; /* gray-400 */
+    color: white;
+    width: 100%;
+    margin-top: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: not-allowed;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 600px) {
+    main {
+      padding: 16px;
+    }
+  
+    .cart-item img {
+      width: 60px;
+      height: 60px;
+      margin-right: 12px;
+    }
+  
+    .item-details h2 {
+      font-size: 14px;
+    }
+  
+    .order-summary h2 {
+      font-size: 18px;
+    }
+  
+    .summary-row,
+    .summary-total {
+      font-size: 14px;
+    }
+  
+    .checkout-btn {
+      padding: 8px;
+      font-size: 14px;
+    }
+  }
+  
